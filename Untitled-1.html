@@ -1,0 +1,40 @@
+
+const Skillbar = ({ skill, level }) => { 
+
+
+    const[isHovered, setIsHovered]= useState(false);
+    return (
+        
+        <div className="my-4">
+            <div className=""text-xl font-semibold mb-2>{skill}</div>
+
+
+            <div >
+                <span>{level%}</span>
+            </div>
+
+
+            <motion.div
+
+            initial={{width:0}}
+            animate={{width: isHovered? "0%": `${level}%`}}
+            onHoverStart={()=>setIsHovered(true)
+            onHoverStart={()=>setIsHovered(false)
+        
+            
+            
+            />
+                
+
+
+ 
+
+
+
+        </div>
+    )
+    
+
+
+
+}
